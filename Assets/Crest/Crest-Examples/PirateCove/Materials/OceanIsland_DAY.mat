@@ -162,17 +162,17 @@ Material:
     - _Specular: 0.78
     - _StartLevel: 0.157
     - _StencilFunction: 0
-    - _SubSurfaceBase: 2.16
+    - _SubSurfaceBase: 1.59
     - _SubSurfaceCrestColour: 1
-    - _SubSurfaceDepthMax: 24.5
-    - _SubSurfaceDepthPower: 2.35
+    - _SubSurfaceDepthMax: 16.9
+    - _SubSurfaceDepthPower: 2.61
     - _SubSurfaceHeightLerp: 1
     - _SubSurfaceHeightMax: 57.9
     - _SubSurfaceHeightPower: 5.43
     - _SubSurfaceScattering: 1
     - _SubSurfaceShallowColour: 1
-    - _SubSurfaceSun: 6.17
-    - _SubSurfaceSunFallOff: 3.7
+    - _SubSurfaceSun: 5.38
+    - _SubSurfaceSunFallOff: 6.24
     - _TexelSize: 0.125
     - _TextureRes: 1024
     - _Transparency: 1
