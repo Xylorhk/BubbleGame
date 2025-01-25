@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Lights
   - Bubbles
+  - Readable
   layers:
   - Default
   - TransparentFX
