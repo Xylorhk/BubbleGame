@@ -43,3 +43,8 @@ MonoBehaviour:
   - ActionUI / Hide
   - ActionUI / Show
   - Interact
+  - Boat / Accelerate
+  - Boat / Decelerate
+  - Boat / Engage
+  - Boat / Disengage
+  - Tilt / Front
