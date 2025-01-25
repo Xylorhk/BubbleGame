@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class MonsterEvent : MonoBehaviour
 {
@@ -13,23 +15,29 @@ public class MonsterEvent : MonoBehaviour
     public GameObject Spawn;
 
     Vector3 EventPos;
-    float EventTimer;
+    public static float EventTimer;
     int MonsterLocation;
-    bool EventActive;
+    public static bool EventActive;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        EventTimer = 30;
+        EventTimer = 5;
+        EventActive = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        EventTimer -= Time.deltaTime;
+        if (EventActive == false)
+        {
+            EventTimer -= Time.deltaTime;
+        }
 
         if (EventTimer < 1)
         {
             EventActive = true;
+            EventTimer = 1;
+
             MonsterLocation = Random.Range(1, 7);
             if (MonsterLocation == 1)
             {
