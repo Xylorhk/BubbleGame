@@ -6366,6 +6366,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6847907041020223736, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 385964ec887b4af4db3a3c59ccd16652, type: 2}
+    - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
+      propertyPath: fsm.variables.floatVariables.Array.data[0].value
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
         type: 3}
       propertyPath: fsm.variables.colorVariables.Array.data[0].value.b
@@ -6380,6 +6390,16 @@ PrefabInstance:
         type: 3}
       propertyPath: fsm.variables.colorVariables.Array.data[0].value.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
+      propertyPath: fsm.variables.vector2Variables.Array.data[0].value.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
+      propertyPath: fsm.variables.vector2Variables.Array.data[0].value.y
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6548,6 +6568,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4689785320696791146, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: bb2f1bc6cf67aec4da3591815045111a, type: 2}
+    - target: {fileID: 6847907041020223736, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: bb2f1bc6cf67aec4da3591815045111a, type: 2}
     - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
         type: 3}
       propertyPath: fsm.variables.floatVariables.Array.data[0].value
@@ -17634,6 +17664,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6847907041020223736, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 91d4b69b8abe0144f90519778441ffd9, type: 2}
     - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
         type: 3}
       propertyPath: fsm.variables.colorVariables.Array.data[0].value.b
@@ -19539,6 +19574,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6847907041020223736, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cf21888f6b4605448b520f0b8adab2c6, type: 2}
     - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
         type: 3}
       propertyPath: fsm.variables.floatVariables.Array.data[0].value
