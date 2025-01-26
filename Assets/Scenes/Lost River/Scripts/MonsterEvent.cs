@@ -17,8 +17,10 @@ public class MonsterEvent : MonoBehaviour
     public GameObject Boat;
     Vector3 EventPos;
     Vector3 BoatPos;
+    [SerializeField]
     public static float EventTimer;
-    int MonsterLocation;
+    public float EventTime;
+    public int MonsterLocation;
     public static bool EventActive;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,8 +28,8 @@ public class MonsterEvent : MonoBehaviour
         BoatPos = Boat.transform.position;
         EventPos = BoatPos;
         EventPos.y = -50;
-        Instantiate(TheMonster, EventPos, Quaternion.identity);
-        EventTimer = 5;
+        Instantiate(TheMonster, EventPos, Quaternion.identity, Boat.transform);
+        EventTimer = EventTime;
         EventActive = false;
     }
 
