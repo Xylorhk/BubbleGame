@@ -27,6 +27,6 @@ public class BubbleScript : MonoBehaviour
     void Retreat ()
     {
         MonsterEvent.EventActive = false;
-        MonsterEvent.EventTimer = 15;
+        //MonsterEvent.EventTimer = 15;
     }
 }

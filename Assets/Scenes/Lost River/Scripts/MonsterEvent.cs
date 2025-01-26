@@ -17,8 +17,6 @@ public class MonsterEvent : MonoBehaviour
     public GameObject Boat;
     Vector3 EventPos;
     Vector3 BoatPos;
-    [SerializeField]
-    public static float EventTimer;
     public float EventTime;
     public int MonsterLocation;
     public static bool EventActive;
@@ -29,22 +27,25 @@ public class MonsterEvent : MonoBehaviour
         EventPos = BoatPos;
         EventPos.y = -50;
         Instantiate(TheMonster, EventPos, Quaternion.identity, Boat.transform);
-        EventTimer = EventTime;
         EventActive = false;
     }
-
+    void Retreat()
+    {
+        EventActive = false;
+        EventTime = 15;
+    }
     // Update is called once per frame
     void Update()
     {
         if (EventActive == false)
         {
-            EventTimer -= Time.deltaTime;
+            EventTime -= Time.deltaTime;
         }
         
-        if (EventTimer < 1)
+        if (EventTime < 1)
         {
             EventActive = true;
-            EventTimer = 1;
+            EventTime = 1;
 
             MonsterLocation = Random.Range(1, 7);
             if (MonsterLocation == 1)
