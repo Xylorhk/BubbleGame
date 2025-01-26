@@ -48,3 +48,8 @@ MonoBehaviour:
   - Boat / Engage
   - Boat / Disengage
   - Tilt / Front
+  - Game / Win
+  - UI  / Start
+  - UI  / Credits
+  - UI  / Exit
+  - UI  / Options
