@@ -388,7 +388,7 @@ Transform:
   m_GameObject: {fileID: 1351012990999605710}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.23715127, y: 2.561, z: 8.229799}
+  m_LocalPosition: {x: 0.23715127, y: 0, z: 8.229799}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -494,7 +494,10 @@ MonoBehaviour:
   EventArea5: {fileID: 1964814015045490710}
   EventArea6: {fileID: 1601107890887067200}
   EventArea7: {fileID: 8604723837804326228}
-  Spawn: {fileID: 0}
+  Spawn: {fileID: 2166553497201563169, guid: 405929d12213dd242972543b7d66e6a8, type: 3}
+  TheMonster: {fileID: 303354727723035497, guid: c2e4dc4fdf3139e4c9c60e6a41c260a1,
+    type: 3}
+  Boat: {fileID: 7271739045539573258}
 --- !u!1 &1601107890887067200
 GameObject:
   m_ObjectHideFlags: 0
