@@ -486,7 +486,7 @@ Transform:
   m_GameObject: {fileID: 706303223377477907}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.012623, y: -5.92, z: 7.292372}
+  m_LocalPosition: {x: 4.0126343, y: -5.92, z: 7.2923737}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -494,7 +494,7 @@ Transform:
   - {fileID: 66833278848669964}
   - {fileID: 5494624046360528565}
   - {fileID: 6374602377854714719}
-  m_Father: {fileID: 1304145112104589342}
+  m_Father: {fileID: 4567792901137851730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &738460488588425556
 GameObject:
@@ -531,7 +531,7 @@ RectTransform:
   - {fileID: 4960036169989036022}
   - {fileID: 7830619664956609658}
   - {fileID: 4170443193869844432}
-  m_Father: {fileID: 1304145112104589342}
+  m_Father: {fileID: 4567792901137851730}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -781,7 +781,7 @@ Transform:
   m_GameObject: {fileID: 1351012990999605710}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.23715127, y: 0, z: 8.229799}
+  m_LocalPosition: {x: 0.23712158, y: 0, z: 8.229797}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -792,7 +792,7 @@ Transform:
   - {fileID: 1169346650450599540}
   - {fileID: 3684316691154369090}
   - {fileID: 3351308323239764337}
-  m_Father: {fileID: 1304145112104589342}
+  m_Father: {fileID: 4567792901137851730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7336250231429739393
 MeshFilter:
@@ -1277,11 +1277,11 @@ Transform:
   m_GameObject: {fileID: 2957559570575086163}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7068794, y: -0.017932449, z: 0.01793245, w: 0.7068794}
-  m_LocalPosition: {x: -0, y: 278.6, z: 0}
+  m_LocalPosition: {x: 0, y: 278.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1304145112104589342}
+  m_Father: {fileID: 4567792901137851730}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 2.906}
 --- !u!20 &3044206127799485318
 Camera:
@@ -4125,7 +4125,7 @@ Transform:
   - {fileID: 6927509088522803456}
   - {fileID: 734804313514143260}
   - {fileID: 3973919958035467169}
-  m_Father: {fileID: 1304145112104589342}
+  m_Father: {fileID: 4567792901137851730}
   m_LocalEulerAnglesHint: {x: 0, y: -91.907, z: 0}
 --- !u!33 &7922937019193749890
 MeshFilter:
@@ -4609,14 +4609,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5290410552219375352}
-  - {fileID: 740544708081990700}
-  - {fileID: 2620670934414690471}
-  - {fileID: 4903788557506531304}
-  - {fileID: 2659770250355704011}
-  - {fileID: 4759490514038918130}
-  - {fileID: 5152727869008363200}
-  - {fileID: 1752293525143443954}
+  - {fileID: 4567792901137851730}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &7607301693812009619
@@ -4682,16 +4675,16 @@ MonoBehaviour:
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
-    name: Parenter
-    startState: Parenter
+    name: BoatEvents
+    startState: Init
     states:
-    - name: Parenter
+    - name: Init
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 50
-        y: 100
+        x: 64
+        y: 101
         width: 100
         height: 32
       isBreakpoint: 0
@@ -4699,53 +4692,39 @@ MonoBehaviour:
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Parent
-          isSystemEvent: 0
+          name: FINISHED
+          isSystemEvent: 1
           isGlobal: 0
-        toState: Parent
+        toState: Listen
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.TriggerEvent
+        - HutongGames.PlayMaker.Actions.GetOwner
         customNames:
         - 
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 9c512400
+        actionHashCodes: 5c004505
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
-          name: 
+          name: Boat
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
+        fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Player
+        fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -4758,156 +4737,270 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams:
-        - Parent
-        byteData: 01000000
+        stringParams: []
+        byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000007000000120000001700000013000000
+        paramDataType: 13000000
         paramName:
-        - gameObject
-        - trigger
-        - collideTag
-        - sendEvent
-        - storeCollider
-        paramDataPos: 0000000000000000000000000000000000000000
-        paramByteDataSize: 0000000004000000000000000000000000000000
-    - name: Parent
+        - storeGameObject
+        paramDataPos: 00000000
+        paramByteDataSize: 00000000
+    - name: Listen
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 291
-        y: 99
-        width: 100
+        x: 235.26562
+        y: 99.5625
+        width: 103.64
         height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Unparent
+          name: Boat / Shake
           isSystemEvent: 0
-          isGlobal: 0
-        toState: Parenter
+          isGlobal: 1
+        toState: Shake
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
         colorIndex: 0
       actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.TriggerEvent
-        - HutongGames.PlayMaker.Actions.SetParent
-        customNames:
-        - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: 9c512400a0dd8303
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
         unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 7271739045539573258}
-        fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 1
-            name: Player
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Player
+        fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams: []
-        fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
+        fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams:
-        - Unparent
-        byteData: 02000000
+        stringParams: []
+        byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000070000001200000017000000130000001400000013000000110000001100000011000000
-        paramName:
-        - gameObject
-        - trigger
-        - collideTag
-        - sendEvent
-        - storeCollider
-        - gameObject
-        - parent
-        - worldPositionStays
-        - resetLocalPosition
-        - resetLocalRotation
-        paramDataPos: 00000000000000000000000000000000000000000100000001000000000000000100000002000000
-        paramByteDataSize: 00000000040000000000000000000000000000000000000000000000000000000000000000000000
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: Shake
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 422.6328
+        y: 110.69531
+        width: 116.27
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Boat / Tremble
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: Tremble
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: Tremble
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 585.6094
+        y: 116.375
+        width: 131.3
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Boat / DragBelow
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: DragBelow
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: DragBelow
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 767.0078
+        y: 128.63281
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: Parent
       isSystemEvent: 0
       isGlobal: 0
     - name: Unparent
       isSystemEvent: 0
+      isGlobal: 0
+    - name: Boat / Shake
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Boat / Tremble
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Boat / DragBelow
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: FINISHED
+      isSystemEvent: 1
       isGlobal: 0
     globalTransitions: []
     variables:
@@ -8051,6 +8144,45 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &8316049431459900398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4567792901137851730}
+  m_Layer: 0
+  m_Name: AnimOffset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4567792901137851730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316049431459900398}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5290410552219375352}
+  - {fileID: 740544708081990700}
+  - {fileID: 2620670934414690471}
+  - {fileID: 4903788557506531304}
+  - {fileID: 2659770250355704011}
+  - {fileID: 4759490514038918130}
+  - {fileID: 5152727869008363200}
+  - {fileID: 1752293525143443954}
+  m_Father: {fileID: 1304145112104589342}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8604723837804326228
 GameObject:
   m_ObjectHideFlags: 0
@@ -8424,7 +8556,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1304145112104589342}
+    m_TransformParent: {fileID: 4567792901137851730}
     m_Modifications:
     - target: {fileID: 2471287097505343195, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
@@ -8454,7 +8586,7 @@ PrefabInstance:
     - target: {fileID: 4698121600755785800, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.84
+      value: 2.8400269
       objectReference: {fileID: 0}
     - target: {fileID: 4698121600755785800, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
@@ -8464,7 +8596,7 @@ PrefabInstance:
     - target: {fileID: 4698121600755785800, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.28
+      value: 0.27999878
       objectReference: {fileID: 0}
     - target: {fileID: 4698121600755785800, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
@@ -9045,7 +9177,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1304145112104589342}
+    m_TransformParent: {fileID: 4567792901137851730}
     m_Modifications:
     - target: {fileID: 2471287097505343195, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
@@ -9075,7 +9207,7 @@ PrefabInstance:
     - target: {fileID: 4698121600755785800, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2828488
+      value: -3.282837
       objectReference: {fileID: 0}
     - target: {fileID: 4698121600755785800, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
@@ -9085,7 +9217,7 @@ PrefabInstance:
     - target: {fileID: 4698121600755785800, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.27979946
+      value: 0.27980042
       objectReference: {fileID: 0}
     - target: {fileID: 4698121600755785800, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
@@ -9144,7 +9276,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1304145112104589342}
+    m_TransformParent: {fileID: 4567792901137851730}
     m_Modifications:
     - target: {fileID: 2471287097505343195, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
@@ -9174,7 +9306,7 @@ PrefabInstance:
     - target: {fileID: 4698121600755785800, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.358
+      value: 2.3579712
       objectReference: {fileID: 0}
     - target: {fileID: 4698121600755785800, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
@@ -9184,7 +9316,7 @@ PrefabInstance:
     - target: {fileID: 4698121600755785800, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.99
+      value: 6.9900055
       objectReference: {fileID: 0}
     - target: {fileID: 4698121600755785800, guid: 3e1d60a2d9cbfd54094e43a3bc09e518,
         type: 3}

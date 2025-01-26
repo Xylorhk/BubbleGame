@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ocean Set Up.unity
     guid: 17bf498cbcabce847bd8aa7449d19791
+  - enabled: 1
+    path: Assets/Scenes/Win Screen.unity
+    guid: b8a0683306818624f949e96f50c02e3c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

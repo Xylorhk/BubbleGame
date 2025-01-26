@@ -26,7 +26,7 @@ public class MonsterEvent : MonoBehaviour
     {
         BoatPos = Boat.transform.position;
         EventPos = BoatPos;
-        EventPos.y = -50;
+        EventPos.y = -70;
         Instantiate(TheMonster, EventPos, Quaternion.identity, Boat.transform);
         EventActive = false;
     }
