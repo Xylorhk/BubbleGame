@@ -6609,7 +6609,7 @@ PrefabInstance:
     - target: {fileID: 2320373754443197779, guid: 6670dbe866f6b4b47a2616523cdffb15,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -433.2
+      value: -522.9
       objectReference: {fileID: 0}
     - target: {fileID: 2320373754443197779, guid: 6670dbe866f6b4b47a2616523cdffb15,
         type: 3}
@@ -6619,7 +6619,7 @@ PrefabInstance:
     - target: {fileID: 2320373754443197779, guid: 6670dbe866f6b4b47a2616523cdffb15,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 368.2
+      value: 294.5
       objectReference: {fileID: 0}
     - target: {fileID: 2320373754443197779, guid: 6670dbe866f6b4b47a2616523cdffb15,
         type: 3}
@@ -6658,6 +6658,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
         type: 3}
+      propertyPath: fsm.variables.floatVariables.Array.data[0].value
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
       propertyPath: fsm.variables.colorVariables.Array.data[0].value.b
       value: 0
       objectReference: {fileID: 0}
@@ -6670,6 +6675,16 @@ PrefabInstance:
         type: 3}
       propertyPath: fsm.variables.colorVariables.Array.data[0].value.r
       value: 0.013375282
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
+      propertyPath: fsm.variables.vector2Variables.Array.data[0].value.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
+      propertyPath: fsm.variables.vector2Variables.Array.data[0].value.y
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19872,6 +19887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
         type: 3}
+      propertyPath: fsm.variables.floatVariables.Array.data[0].value
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
       propertyPath: fsm.variables.colorVariables.Array.data[0].value.b
       value: 1
       objectReference: {fileID: 0}
@@ -19879,6 +19899,16 @@ PrefabInstance:
         type: 3}
       propertyPath: fsm.variables.colorVariables.Array.data[0].value.g
       value: 0.38230443
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
+      propertyPath: fsm.variables.vector2Variables.Array.data[0].value.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065837255852304356, guid: 6670dbe866f6b4b47a2616523cdffb15,
+        type: 3}
+      propertyPath: fsm.variables.vector2Variables.Array.data[0].value.y
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
