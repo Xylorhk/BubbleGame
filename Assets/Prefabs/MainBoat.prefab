@@ -4341,7 +4341,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 5
+          value: 0.5
         - useVariable: 1
           name: 
           tooltip: 
@@ -4456,7 +4456,7 @@ MonoBehaviour:
         - 
         - 
         - Boat / Decelerate
-        byteData: 1500000000010000000001000000010177000000
+        byteData: 1500000001010000000001000000010177000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -4627,7 +4627,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 30
+          value: 1
         - useVariable: 1
           name: 
           tooltip: 
