@@ -28766,6 +28766,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainBoat
       objectReference: {fileID: 0}
+    - target: {fileID: 8004459892804554860, guid: d0210777104a44e4e92f877fd9f45957,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.67297
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004459892804554860, guid: d0210777104a44e4e92f877fd9f45957,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.67297
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004459892804554860, guid: d0210777104a44e4e92f877fd9f45957,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.67297
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004459892804554860, guid: d0210777104a44e4e92f877fd9f45957,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -51.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004459892804554860, guid: d0210777104a44e4e92f877fd9f45957,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 150.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
