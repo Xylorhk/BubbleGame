@@ -18,6 +18,7 @@ public class MonsterEvent : MonoBehaviour
     Vector3 EventPos;
     Vector3 BoatPos;
     public float EventTime;
+    public float EventFrequency;
     public int MonsterLocation;
     public static bool EventActive;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,7 +33,7 @@ public class MonsterEvent : MonoBehaviour
     void Retreat()
     {
         EventActive = false;
-        EventTime = 15;
+        EventTime = EventFrequency;
     }
     // Update is called once per frame
     void Update()
