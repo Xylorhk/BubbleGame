@@ -31484,6 +31484,31 @@ PrefabInstance:
       propertyPath: fsm.variables.floatVariables.Array.data[1].value
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1031756153257835017, guid: d0210777104a44e4e92f877fd9f45957,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmFloatParams.Array.data[0].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031756153257835017, guid: d0210777104a44e4e92f877fd9f45957,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmFloatParams.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031756153257835017, guid: d0210777104a44e4e92f877fd9f45957,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmFloatParams.Array.data[8].value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031756153257835017, guid: d0210777104a44e4e92f877fd9f45957,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmFloatParams.Array.data[0].useVariable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245737220250176803, guid: d0210777104a44e4e92f877fd9f45957,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1304145112104589342, guid: d0210777104a44e4e92f877fd9f45957,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33793,6 +33818,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BubbleVFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175011279195241923, guid: 405929d12213dd242972543b7d66e6a8,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361497608364715753, guid: 405929d12213dd242972543b7d66e6a8,
         type: 3}
